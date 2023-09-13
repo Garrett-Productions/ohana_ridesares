@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="p-4 container">
+        <div class="nav-bar">
+            <h2></h2>
+            <div>
+                <div>
+                    <a href="/dashbaord">Home</a>
+                </div>
+                <a href="/logout">Log out</a>
+            </div>
+        </div>
+        <div class="detail-box">
+            <h5>Ready for your trip to the post office!</h5>
+            <div>
+                <p>Who's driving?</p>
+                <p>Bianca</p>
+            </div>
+            <div>
+                <p>Who's coming along?</p>
+                <p>You</p>
+            </div>
+        </div>
+        <div>
+            <p>Date</p>
+            <p>March 8</p>
+        </div>
+        <div>
+            <p>Pick Up location</p>
+            <p>My House</p>
+        </div>
+        <div>
+            <p>Details:</p>
+            <p>Any time before 3PM..</p>
+        </div>
+        <a href="/rides/edit/2">Edit</a>
+        <a href="/rides/delete/2">DELETE</a>
+    </div>
+</body>
+</html>

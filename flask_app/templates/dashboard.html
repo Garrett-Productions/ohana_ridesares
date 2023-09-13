@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="p-4 dash-container">
+        <div class="nav-bar">
+            <h1>Welcome Mateo</h1> /<!-- the name is hardcoded but we parse in later-->
+            <div>
+                <div>
+                    <span>+</span>
+                    <a href="/rides/new">Request a Ride</a>
+                </div>
+                <a href="/logout">Log out</a>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div>
+                <h3>Rideshare Requests</h3>
+                <div class="card-rows">
+                    <div class="card p-3 m-3">
+                        <p>Rider: Sam</p>  <!--hardcoded name once more until we parse-->
+                        <p>Destination: beach</p> 
+                        <p>When needed April 289th/p> 
+                        <p><a href="/rides/delete/2">DELETE</a></p> 
+                    </div>
+                    <div class="crad p-3 m-3 bg-info">
+                        <p>Rider: John</p>
+                        <p>Destiantion: car Body Shop</p>
+                        <p>When Needed: May 18th</p>
+                        <p><a href="/rides/assign/3">I can Drive</a></p>
+                    </div>
+                    <div class="crad p-3 m-3 bg-info">
+                        <p>Rider: Mateo</p>
+                        <p>Destiantion: car Body Shop</p>
+                        <p>When Needed: May 5th</p>
+                        <p><a href="/rides/assign/2">I can Drive</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="m-3">Booked Rideshares</h3>
+                <div class="card-rows">
+                    <div class="card p-3 m-3">
+                        <p><strong>Toby</strong>is driving Daisy to the Corner Store</p>
+                    </div>
+                    <div class="card p-3 m-3">
+                        <p><strong>Toby</strong>is driving Daisy to the Corner Store</p>
+                        <p><a href="/rides/2">Details</a><a href="/rides/cancel/2">Cancel</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
